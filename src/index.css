@@ -1,0 +1,311 @@
+@import "tailwindcss";
+
+/* -------------------------------------------------------------
+   THEME STYLES: High Contrast Engineering Day Mode Overrides
+   ------------------------------------------------------------- */
+html.theme-high-contrast {
+  color-scheme: light;
+}
+
+html.theme-high-contrast body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Background Canvas & Section Containers */
+html.theme-high-contrast .min-h-screen,
+html.theme-high-contrast main,
+html.theme-high-contrast section {
+  background-color: transparent !important;
+}
+
+html.theme-high-contrast section#tech-stack {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* High Contrast Grid in Hero */
+html.theme-high-contrast #home > div:first-child {
+  opacity: 0.35 !important;
+  background-image: 
+    linear-gradient(to right, #94a3b8 1px, transparent 1px),
+    linear-gradient(to bottom, #94a3b8 1px, transparent 1px) !important;
+}
+
+/* Navbar */
+html.theme-high-contrast #main-navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: #cbd5e1 !important;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05) !important;
+}
+
+html.theme-high-contrast #desktop-navigation {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.theme-high-contrast #desktop-navigation a {
+  color: #334155 !important;
+}
+
+html.theme-high-contrast #desktop-navigation a:hover {
+  color: #0f172a !important;
+  background-color: #e2e8f0 !important;
+}
+
+html.theme-high-contrast #desktop-navigation a[class*="text-cyan-300"] {
+  color: #0369a1 !important;
+  background-color: #e0f2fe !important;
+  border-color: #7dd3fc !important;
+  font-weight: 700 !important;
+}
+
+html.theme-high-contrast #mobile-menu-drawer {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.theme-high-contrast #mobile-menu-drawer a {
+  color: #1e293b !important;
+}
+
+html.theme-high-contrast #navbar-brand-logo span {
+  color: #0f172a !important;
+}
+
+html.theme-high-contrast #navbar-brand-logo div:first-child {
+  background-color: #f1f5f9 !important;
+  border-color: #0284c7 !important;
+}
+
+/* Headings & Text Contrast */
+html.theme-high-contrast h1,
+html.theme-high-contrast h2,
+html.theme-high-contrast h3,
+html.theme-high-contrast h4,
+html.theme-high-contrast h5,
+html.theme-high-contrast h6,
+html.theme-high-contrast .text-white,
+html.theme-high-contrast .text-slate-100,
+html.theme-high-contrast .text-slate-200 {
+  color: #090d16 !important;
+}
+
+html.theme-high-contrast p,
+html.theme-high-contrast .text-slate-300,
+html.theme-high-contrast .text-slate-400 {
+  color: #334155 !important;
+}
+
+html.theme-high-contrast .text-slate-500 {
+  color: #475569 !important;
+}
+
+/* High Contrast Accent Colors for Day Light */
+html.theme-high-contrast .text-cyan-400,
+html.theme-high-contrast .text-cyan-300,
+html.theme-high-contrast .text-cyan-200 {
+  color: #0284c7 !important;
+}
+
+html.theme-high-contrast .text-orange-400,
+html.theme-high-contrast .text-orange-300 {
+  color: #c2410c !important;
+}
+
+html.theme-high-contrast .text-emerald-400,
+html.theme-high-contrast .text-emerald-300 {
+  color: #047857 !important;
+}
+
+html.theme-high-contrast .text-yellow-400,
+html.theme-high-contrast .text-yellow-300 {
+  color: #b45309 !important;
+}
+
+html.theme-high-contrast .text-purple-400,
+html.theme-high-contrast .text-purple-300 {
+  color: #7e22ce !important;
+}
+
+/* Hero Headline gradient adaptation */
+html.theme-high-contrast h1 span.bg-clip-text {
+  background-image: linear-gradient(to right, #0284c7, #0369a1, #075985) !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Cards & Containers */
+html.theme-high-contrast [id*="card"],
+html.theme-high-contrast [id*="featured-"],
+html.theme-high-contrast [id*="stat-"],
+html.theme-high-contrast [id*="github-repo-"],
+html.theme-high-contrast .rounded-2xl,
+html.theme-high-contrast .rounded-xl {
+  border-color: #cbd5e1 !important;
+}
+
+html.theme-high-contrast div[class*="bg-[#0d131f]"],
+html.theme-high-contrast div[class*="bg-[#0b101b]"],
+html.theme-high-contrast div[class*="bg-[#0e1422]"],
+html.theme-high-contrast div[class*="bg-[#0c111c]"],
+html.theme-high-contrast div[class*="bg-[#0e1420]"],
+html.theme-high-contrast div[class*="bg-[#0a0e16]"],
+html.theme-high-contrast div[class*="bg-[#120f18]"],
+html.theme-high-contrast div[class*="bg-[#0e131d]"],
+html.theme-high-contrast div[class*="bg-slate-900/60"],
+html.theme-high-contrast div[class*="bg-slate-900/80"],
+html.theme-high-contrast div[class*="bg-slate-900/90"],
+html.theme-high-contrast div[class*="bg-slate-900"] {
+  background: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06) !important;
+}
+
+html.theme-high-contrast div[class*="bg-[#0b101b]"] div[class*="bg-black/80"] {
+  background-color: #0f172a !important;
+}
+
+html.theme-high-contrast div[class*="bg-slate-950"] {
+  background-color: #f1f5f9 !important;
+}
+
+/* Badges & Status Pills */
+html.theme-high-contrast div[class*="bg-cyan-950"],
+html.theme-high-contrast span[class*="bg-cyan-950"] {
+  background-color: #e0f2fe !important;
+  color: #0369a1 !important;
+  border-color: #7dd3fc !important;
+}
+
+html.theme-high-contrast div[class*="bg-orange-950"],
+html.theme-high-contrast span[class*="bg-orange-950"] {
+  background-color: #ffedd5 !important;
+  color: #c2410c !important;
+  border-color: #fdba74 !important;
+}
+
+html.theme-high-contrast div[class*="bg-emerald-950"],
+html.theme-high-contrast span[class*="bg-emerald-950"] {
+  background-color: #dcfce7 !important;
+  color: #15803d !important;
+  border-color: #86efac !important;
+}
+
+html.theme-high-contrast div[class*="bg-purple-950"],
+html.theme-high-contrast span[class*="bg-purple-950"] {
+  background-color: #f3e8ff !important;
+  color: #7e22ce !important;
+  border-color: #d8b4fe !important;
+}
+
+html.theme-high-contrast div[class*="bg-amber-950"],
+html.theme-high-contrast span[class*="bg-amber-950"] {
+  background-color: #fef3c7 !important;
+  color: #b45309 !important;
+  border-color: #fde68a !important;
+}
+
+html.theme-high-contrast div[class*="bg-red-950"],
+html.theme-high-contrast span[class*="bg-red-950"] {
+  background-color: #fee2e2 !important;
+  color: #b91c1c !important;
+  border-color: #fca5a5 !important;
+}
+
+/* Secondary Button In High Contrast */
+html.theme-high-contrast a[class*="bg-slate-900"],
+html.theme-high-contrast button[class*="bg-slate-900"] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.theme-high-contrast a[class*="bg-slate-900"]:hover,
+html.theme-high-contrast button[class*="bg-slate-900"]:hover {
+  background-color: #f8fafc !important;
+  border-color: #0284c7 !important;
+}
+
+/* Inputs in High Contrast */
+html.theme-high-contrast input,
+html.theme-high-contrast textarea {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html.theme-high-contrast input::placeholder,
+html.theme-high-contrast textarea::placeholder {
+  color: #64748b !important;
+}
+
+html.theme-high-contrast input:focus,
+html.theme-high-contrast textarea:focus {
+  border-color: #0284c7 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2) !important;
+}
+
+/* Modal in High Contrast */
+html.theme-high-contrast div[class*="bg-[#0b0f19]"] {
+  background-color: #ffffff !important;
+  border-color: #94a3b8 !important;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25) !important;
+}
+
+/* AI Assistant in High Contrast */
+html.theme-high-contrast #ai-assistant-container {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.1) !important;
+}
+
+html.theme-high-contrast #ai-assistant-container div[class*="from-slate-900"] {
+  background: #f1f5f9 !important;
+  border-bottom-color: #cbd5e1 !important;
+}
+
+html.theme-high-contrast #ai-assistant-container h3 {
+  color: #0f172a !important;
+}
+
+html.theme-high-contrast #ai-assistant-container div[class*="bg-slate-900/90"] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+html.theme-high-contrast #ai-assistant-container div[class*="bg-slate-950/60"] {
+  background-color: #f1f5f9 !important;
+  border-top-color: #cbd5e1 !important;
+}
+
+html.theme-high-contrast #ai-assistant-container div[class*="bg-slate-900/90"] button {
+  color: #334155 !important;
+}
+
+html.theme-high-contrast #ai-assistant-container input {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html.theme-high-contrast #ai-assistant-container button[class*="bg-slate-900"] {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+/* Footer in High Contrast */
+html.theme-high-contrast #main-footer {
+  background-color: #f1f5f9 !important;
+  border-top-color: #cbd5e1 !important;
+}
+
+html.theme-high-contrast #main-footer span,
+html.theme-high-contrast #main-footer p {
+  color: #475569 !important;
+}
+
+html.theme-high-contrast #main-footer .text-white {
+  color: #0f172a !important;
+}
