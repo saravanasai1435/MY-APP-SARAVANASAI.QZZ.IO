@@ -64,8 +64,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
       const origin = event.origin;
-      // Validate origin is from preview container, run.app, or localhost
+      // Validate origin matches current site, Netlify preview/prod, run.app, or localhost
       if (
+        origin !== window.location.origin &&
+        !origin.endsWith('.netlify.app') &&
         !origin.endsWith('.run.app') &&
         !origin.includes('localhost') &&
         !origin.includes('127.0.0.1')
